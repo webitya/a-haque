@@ -7,7 +7,9 @@ export default function GalleryGrid() {
   const [selectedItem, setSelectedItem] = useState(null)
 
   const filteredItems =
-    activeCategory === "all" ? galleryData : galleryData.filter((item) => item.category === activeCategory)
+    activeCategory === "all"
+      ? galleryData
+      : galleryData.filter((item) => item.category === activeCategory)
 
   const openModal = (item) => {
     setSelectedItem(item)
@@ -56,7 +58,11 @@ export default function GalleryGrid() {
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
                     <div className="w-16 h-16 bg-white bg-opacity-90 rounded-full flex items-center justify-center">
-                      <svg className="w-8 h-8 text-green-600 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                      <svg
+                        className="w-8 h-8 text-green-600 ml-1"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
                         <path d="M8 5v14l11-7z" />
                       </svg>
                     </div>
@@ -71,16 +77,20 @@ export default function GalleryGrid() {
               )}
             </div>
             <div className="p-4">
-              <h3 className="font-semibold text-gray-900 mb-2 line-clamp-2">{item.title}</h3>
-              <p className="text-sm text-gray-600 line-clamp-2">{item.description}</p>
+              <h3 className="font-semibold text-gray-900 mb-2 line-clamp-2">
+                {item.title}
+              </h3>
+              <p className="text-sm text-gray-600 line-clamp-2">
+                {item.description}
+              </p>
               <div className="mt-3">
                 <span
                   className={`inline-block px-3 py-1 text-xs font-medium rounded-full ${
                     item.category === "treatments"
                       ? "bg-blue-100 text-blue-800"
                       : item.category === "specializations"
-                        ? "bg-purple-100 text-purple-800"
-                        : "bg-green-100 text-green-800"
+                      ? "bg-purple-100 text-purple-800"
+                      : "bg-green-100 text-green-800"
                   }`}
                 >
                   {item.category}
@@ -92,38 +102,68 @@ export default function GalleryGrid() {
       </div>
 
       {/* Modal */}
-      {selectedItem && (
-        <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-4">
-          <div className="relative max-w-4xl max-h-full">
-            <button
-              onClick={closeModal}
-              className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors"
-            >
-              <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
+ {/* Modal */}
+{/* Modal */}
+{/* Modal */}
+{selectedItem && (
+  <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-4">
+    <div className="relative w-[90vw] max-w-3xl h-[90vh] max-h-[90vh] bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+      
+      {/* Close Button */}
+      <button
+        onClick={closeModal}
+        className="absolute top-3 right-3 bg-white rounded-full p-2 shadow-md hover:shadow-lg transition-all z-10"
+        aria-label="Close modal"
+      >
+        <svg
+          className="w-6 h-6 text-green-600"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
 
-            {selectedItem.type === "video" ? (
-              <video controls autoPlay className="max-w-full max-h-full rounded-lg" poster={selectedItem.thumbnail}>
-                <source src={selectedItem.src} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            ) : (
-              <img
-                src={selectedItem.src || "/placeholder.svg"}
-                alt={selectedItem.title}
-                className="max-w-full max-h-full rounded-lg"
-              />
-            )}
+      {/* Content */}
+      <div className="flex-1 flex items-center justify-center p-4">
+        {selectedItem.type === "video" ? (
+          <video
+            controls
+            autoPlay
+            className="w-full h-full object-contain rounded-md"
+            poster={selectedItem.thumbnail}
+          >
+            <source src={selectedItem.src} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        ) : (
+          <img
+            src={selectedItem.src || "/placeholder.svg"}
+            alt={selectedItem.title}
+            className="w-full h-full object-contain rounded-md"
+          />
+        )}
+      </div>
 
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6 rounded-b-lg">
-              <h3 className="text-white text-xl font-semibold mb-2">{selectedItem.title}</h3>
-              <p className="text-gray-300">{selectedItem.description}</p>
-            </div>
-          </div>
-        </div>
-      )}
+      {/* Footer */}
+      <div className="p-4 border-t bg-white">
+        <h3 className="text-lg font-semibold text-gray-900 mb-1">
+          {selectedItem.title}
+        </h3>
+        <p className="text-sm text-gray-700">{selectedItem.description}</p>
+      </div>
+    </div>
+  </div>
+)}
+
+
+
     </div>
   )
 }
