@@ -6,7 +6,7 @@ export async function POST(request) {
     const { name, phone, email, service, date, time, urgency, symptoms, previousTreatment, message } = formData
 
     // Create transporter
-    const transporter = nodemailer.createTransporter({
+    const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
         user: process.env.EMAIL_USER,
@@ -150,7 +150,7 @@ export async function POST(request) {
     // Send email to clinic
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
-      to: "info@aasthaortho.com",
+      to: process.env.EMAIL_USER, // Send to the same email address
       subject: `${urgency === "emergency" ? "🚨 EMERGENCY" : urgency === "urgent" ? "⚠️ URGENT" : ""} Appointment Request - ${name}`,
       html: clinicEmailHtml,
     })
