@@ -33,16 +33,22 @@ export default function MobileDrawer({ isOpen, onClose }) {
 
       {/* Drawer */}
       <div
-        className={`fixed top-0 right-0 h-full w-80 bg-white shadow-xl z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-full w-80 shadow-xl z-50 transform transition-transform duration-300 ease-in-out ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
+        style={{
+          background: "rgba(255, 255, 255, 0.25)",
+          backdropFilter: "blur(10px)",
+          WebkitBackdropFilter: "blur(10px)",
+          border: "1px solid rgba(255, 255, 255, 0.18)",
+        }}
       >
         {/* Header */}
-        <div className="flex items-center justify-between p-4 border-b border-gray-200">
+        <div className="flex items-center justify-between p-4 border-b border-white border-opacity-20">
           <h2 className="text-lg font-semibold text-gray-800">Menu</h2>
           <button
             onClick={onClose}
-            className="p-2 rounded-md text-gray-500 hover:text-gray-700 hover:bg-gray-100 transition-colors"
+            className="p-2 rounded-md text-gray-600 hover:text-gray-800 hover:bg-white hover:bg-opacity-20 transition-colors"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -54,7 +60,7 @@ export default function MobileDrawer({ isOpen, onClose }) {
         <nav className="flex flex-col p-4 space-y-2">
           <Link
             href="/"
-            className="flex items-center px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 rounded-lg transition-colors"
+            className="flex items-center px-4 py-3 text-gray-800 hover:bg-white hover:bg-opacity-20 hover:text-green-700 rounded-lg transition-colors backdrop-blur-sm"
             onClick={onClose}
           >
             <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,7 +76,7 @@ export default function MobileDrawer({ isOpen, onClose }) {
 
           <a
             href="/about"
-            className="flex items-center px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 rounded-lg transition-colors"
+            className="flex items-center px-4 py-3 text-gray-800 hover:bg-white hover:bg-opacity-20 hover:text-green-700 rounded-lg transition-colors backdrop-blur-sm"
             onClick={onClose}
           >
             <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -86,7 +92,7 @@ export default function MobileDrawer({ isOpen, onClose }) {
 
           <a
             href="/services"
-            className="flex items-center px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 rounded-lg transition-colors"
+            className="flex items-center px-4 py-3 text-gray-800 hover:bg-white hover:bg-opacity-20 hover:text-green-700 rounded-lg transition-colors backdrop-blur-sm"
             onClick={onClose}
           >
             <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -100,9 +106,26 @@ export default function MobileDrawer({ isOpen, onClose }) {
             Services
           </a>
 
+          {/* Gallery navigation link with image icon */}
+          <a
+            href="/gallery"
+            className="flex items-center px-4 py-3 text-gray-800 hover:bg-white hover:bg-opacity-20 hover:text-green-700 rounded-lg transition-colors backdrop-blur-sm"
+            onClick={onClose}
+          >
+            <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+              />
+            </svg>
+            Gallery
+          </a>
+
           <a
             href="/contact"
-            className="flex items-center px-4 py-3 text-gray-700 hover:bg-green-50 hover:text-green-700 rounded-lg transition-colors"
+            className="flex items-center px-4 py-3 text-gray-800 hover:bg-white hover:bg-opacity-20 hover:text-green-700 rounded-lg transition-colors backdrop-blur-sm"
             onClick={onClose}
           >
             <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -117,10 +140,10 @@ export default function MobileDrawer({ isOpen, onClose }) {
           </a>
 
           {/* Call Button */}
-          <div className="pt-4 border-t border-gray-200 mt-4">
+          <div className="pt-4 border-t border-white border-opacity-20 mt-4">
             <a
               href="tel:9431338221"
-              className="flex items-center justify-center w-full bg-green-700 text-white px-4 py-3 rounded-lg font-medium hover:bg-green-800 transition-colors"
+              className="flex items-center justify-center w-full bg-green-700 bg-opacity-90 text-white px-4 py-3 rounded-lg font-medium hover:bg-green-800 hover:bg-opacity-90 transition-colors backdrop-blur-sm"
               onClick={onClose}
             >
               <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
@@ -131,12 +154,12 @@ export default function MobileDrawer({ isOpen, onClose }) {
           </div>
 
           {/* Clinic Info */}
-          <div className="pt-4 mt-4 border-t border-gray-200">
+          <div className="pt-4 mt-4 border-t border-white border-opacity-20">
             <div className="text-center">
               <h3 className="font-semibold text-gray-800 mb-2">Dr. A-HAQUE</h3>
-              <p className="text-sm text-gray-600 mb-2">Specialist in AVN, Spine & Knee Joints</p>
-              <p className="text-xs text-gray-500">Aastha Ortho & Neurotherapy Center</p>
-              <p className="text-xs text-gray-500">Ranchi</p>
+              <p className="text-sm text-gray-700 mb-2">Specialist in AVN, Spine & Knee Joints</p>
+              <p className="text-xs text-gray-600">Aastha Ortho & Neurotherapy Center</p>
+              <p className="text-xs text-gray-600">Ranchi</p>
             </div>
           </div>
         </nav>

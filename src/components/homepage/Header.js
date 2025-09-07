@@ -36,6 +36,12 @@ export default function Header() {
                   Services
                 </a>
                 <a
+                  href="/gallery"
+                  className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Gallery
+                </a>
+                <a
                   href="/contact"
                   className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
                 >
