@@ -4,7 +4,7 @@ export const galleryData = [
     type: "image",
     title: "Neurotherapy Treatment Session",
     description: "Advanced neurotherapy treatment for nerve-related disorders",
-    src: "/services/neurotherapy.jpg",
+    src: "/neurotherapy2.png",
     category: "treatments",
   },
   {
@@ -12,7 +12,7 @@ export const galleryData = [
     type: "image",
     title: "Hot Cupping Therapy",
     description: "Traditional hot cupping therapy for pain relief",
-    src: "/services/hot-cupping.jpg",
+    src: "/hot-cupping.png",
     category: "treatments",
   },
   {
@@ -20,7 +20,7 @@ export const galleryData = [
     type: "image",
     title: "Vacuum Cupping Treatment",
     description: "Modern vacuum cupping for muscle tension relief",
-    src: "/services/vacuum-cupping.jpg",
+    src: "/vacuum-cupping.png",
     category: "treatments",
   },
   {
@@ -28,7 +28,7 @@ export const galleryData = [
     type: "image",
     title: "Agni Karma Procedure",
     description: "Traditional Agni Karma therapy for chronic pain",
-    src: "/services/agni-karma.jpg",
+    src: "/agni-karma.png",
     category: "treatments",
   },
   {
@@ -36,7 +36,7 @@ export const galleryData = [
     type: "image",
     title: "Katti Basti Treatment",
     description: "Specialized Katti Basti for lower back pain",
-    src: "/services/katti-basti.jpg",
+    src: "/katti-basti.png",
     category: "treatments",
   },
   {
@@ -44,7 +44,7 @@ export const galleryData = [
     type: "image",
     title: "Steam & Oil Massage",
     description: "Full body steam therapy with therapeutic oil massage",
-    src: "/services/steam-massage.jpg",
+    src: "/steam-massage.png",
     category: "treatments",
   },
   {
@@ -52,7 +52,7 @@ export const galleryData = [
     type: "image",
     title: "Joint Pain Treatment",
     description: "Comprehensive joint pain treatment and rehabilitation",
-    src: "/services/joint-treatment.jpg",
+    src: "/joint-treatment.png",
     category: "treatments",
   },
   {
@@ -60,7 +60,7 @@ export const galleryData = [
     type: "image",
     title: "AVN Treatment Specialization",
     description: "Advanced treatment for Avascular Necrosis (AVN)",
-    src: "/specializations/avn-treatment.jpg",
+    src: "/avn-treatment.png",
     category: "specializations",
   },
   {
@@ -68,7 +68,7 @@ export const galleryData = [
     type: "image",
     title: "Knee Treatment Center",
     description: "Specialized knee joint treatment and therapy",
-    src: "/specializations/knee-treatment.jpg",
+    src: "/knee-treatment.png",
     category: "specializations",
   },
   {
@@ -76,7 +76,7 @@ export const galleryData = [
     type: "image",
     title: "Spine Treatment Facility",
     description: "Advanced spine treatment and rehabilitation center",
-    src: "/specializations/spine-treatment.jpg",
+    src: "/spine-treatment.png",
     category: "specializations",
   },
   {
@@ -87,33 +87,33 @@ export const galleryData = [
     src: "/professional-doctor.png",
     category: "clinic",
   },
-  {
-    id: 12,
-    type: "video",
-    title: "Neurotherapy Treatment Demo",
-    description: "Watch how neurotherapy treatment is performed",
-    src: "/videos/neurotherapy-demo.mp4",
-    thumbnail: "/services/neurotherapy.jpg",
-    category: "treatments",
-  },
-  {
-    id: 13,
-    type: "video",
-    title: "Cupping Therapy Process",
-    description: "Step-by-step cupping therapy demonstration",
-    src: "/videos/cupping-therapy.mp4",
-    thumbnail: "/services/hot-cupping.jpg",
-    category: "treatments",
-  },
-  {
-    id: 14,
-    type: "video",
-    title: "Clinic Tour",
-    description: "Virtual tour of Aastha Ortho & Neurotherapy Center",
-    src: "/videos/clinic-tour.mp4",
-    thumbnail: "/professional-doctor.png",
-    category: "clinic",
-  },
+  // {
+  //   id: 12,
+  //   type: "video",
+  //   title: "Neurotherapy Treatment Demo",
+  //   description: "Watch how neurotherapy treatment is performed",
+  //   src: "/videos/neurotherapy-demo.mp4",
+  //   thumbnail: "/services/neurotherapy.jpg",
+  //   category: "treatments",
+  // },
+  // {
+  //   id: 13,
+  //   type: "video",
+  //   title: "Cupping Therapy Process",
+  //   description: "Step-by-step cupping therapy demonstration",
+  //   src: "/videos/cupping-therapy.mp4",
+  //   thumbnail: "/services/hot-cupping.jpg",
+  //   category: "treatments",
+  // },
+  // {
+  //   id: 14,
+  //   type: "video",
+  //   title: "Clinic Tour",
+  //   description: "Virtual tour of Aastha Ortho & Neurotherapy Center",
+  //   src: "/videos/clinic-tour.mp4",
+  //   thumbnail: "/professional-doctor.png",
+  //   category: "clinic",
+  // },
 ]
 
 export const galleryCategories = [

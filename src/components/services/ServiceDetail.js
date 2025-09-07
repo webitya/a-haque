@@ -8,7 +8,7 @@ export default function ServiceDetail() {
         "Advanced neurotherapy treatments using modern techniques to stimulate nerve function and promote healing. Effective for neurological conditions, nerve pain, and mobility issues.",
       benefits: ["Pain relief", "Improved nerve function", "Enhanced mobility", "Non-invasive treatment"],
       duration: "45-60 minutes",
-      image: "/services/neurotherapy.jpg",
+      image: "/neurotherapy.png",
     },
     {
       title: "Hot Cupping Therapy",
@@ -16,7 +16,7 @@ export default function ServiceDetail() {
         "Traditional hot cupping therapy that uses heated cups to create suction on the skin, promoting blood circulation and relieving muscle tension.",
       benefits: ["Improved blood circulation", "Muscle relaxation", "Pain reduction", "Stress relief"],
       duration: "30-45 minutes",
-      image: "/services/hot-cupping.jpg",
+      image: "/hot-cupping.png",
     },
     {
       title: "Vacuum Cupping",
@@ -24,7 +24,7 @@ export default function ServiceDetail() {
         "Modern vacuum cupping technique that creates controlled suction to treat muscle pain, improve circulation, and promote healing in targeted areas.",
       benefits: ["Targeted pain relief", "Reduced inflammation", "Better circulation", "Muscle recovery"],
       duration: "30-40 minutes",
-      image: "/services/vacuum-cupping.jpg",
+      image: "/vacuum-cupping.png",
     },
     {
       title: "Agni Karma",
@@ -32,7 +32,7 @@ export default function ServiceDetail() {
         "Ancient Ayurvedic thermal therapy using controlled heat application to treat chronic pain conditions, particularly effective for joint and muscle disorders.",
       benefits: ["Chronic pain relief", "Joint mobility", "Reduced stiffness", "Long-lasting results"],
       duration: "20-30 minutes",
-      image: "/services/agni-karma.jpg",
+      image: "/agni-karma.png",
     },
     {
       title: "Katti Basti",
@@ -40,7 +40,7 @@ export default function ServiceDetail() {
         "Specialized Ayurvedic treatment for lower back pain using medicated oils in a dough boundary. Highly effective for spine-related conditions.",
       benefits: ["Lower back pain relief", "Spine health", "Muscle strengthening", "Improved flexibility"],
       duration: "45-60 minutes",
-      image: "/services/katti-basti.jpg",
+      image: "/katti-basti.png",
     },
     {
       title: "Steam Therapy & Oil Massage",
@@ -48,7 +48,7 @@ export default function ServiceDetail() {
         "Full body steam therapy combined with therapeutic oil massage to relax muscles, improve circulation, and promote overall wellness.",
       benefits: ["Full body relaxation", "Improved circulation", "Stress reduction", "Skin health"],
       duration: "60-90 minutes",
-      image: "/services/steam-massage.jpg",
+      image: "/steam-massage.png",
     },
     {
       title: "Joint Pain Treatment",
@@ -56,7 +56,7 @@ export default function ServiceDetail() {
         "Comprehensive treatment for all types of joint pain including arthritis, sports injuries, and age-related joint problems using multiple therapeutic approaches.",
       benefits: ["Pain reduction", "Improved joint function", "Increased mobility", "Preventive care"],
       duration: "30-60 minutes",
-      image: "/services/joint-treatment.jpg",
+      image: "/joint-treatment.png",
     },
     {
       title: "Spine Treatment",
@@ -64,7 +64,7 @@ export default function ServiceDetail() {
         "Specialized treatment for spine disorders including disc problems, sciatica, and spinal alignment issues using advanced neurotherapy techniques.",
       benefits: ["Spine alignment", "Pain relief", "Improved posture", "Enhanced mobility"],
       duration: "45-75 minutes",
-      image: "/services/spine-treatment.jpg",
+      image: "/spine-treatment.png",
     },
     {
       title: "Knee Joint Treatment",
@@ -72,7 +72,7 @@ export default function ServiceDetail() {
         "Expert treatment for knee joint problems including arthritis, ligament issues, and mobility problems using targeted therapy approaches.",
       benefits: ["Knee pain relief", "Improved mobility", "Strengthened muscles", "Better stability"],
       duration: "40-60 minutes",
-      image: "/services/knee-treatment.jpg",
+      image: "/knee-treatment.png",
     },
   ]
 
@@ -94,7 +94,8 @@ export default function ServiceDetail() {
                 <img
                   src={service.image || "/placeholder.svg"}
                   alt={service.title}
-                  className="w-full h-48 object-cover rounded-lg"
+                  // Changed h-48 to a custom height
+                  className="w-full h-[14.4rem] object-cover rounded-lg" 
                 />
               </div>
 
