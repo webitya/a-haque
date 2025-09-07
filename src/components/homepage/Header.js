@@ -3,6 +3,7 @@
 import { useState } from "react"
 import MobileDrawer from "../common/MobileDrawer.js"
 import Link from "next/link.js"
+import Image from "next/image"
 
 export default function Header() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
@@ -12,41 +13,53 @@ export default function Header() {
       <header className="bg-white shadow-sm border-b border-border sticky top-0 z-50">
         <div className="mx-auto px-4 sm:px-4 lg:px-6">
           <div className="flex justify-between items-center h-16">
+            {/* Logo Section */}
             <div className="flex items-center">
-              <div className="flex-shrink-0">
-                <h1 className="text-xl font-bold text-primary">Aastha Ortho & Neurotherapy Center</h1>
-              </div>
+              <Link href="/" className="flex items-center space-x-2">
+                <Image
+                  src="/AasthaOrtho.png" // put this file inside /public folder
+                  alt="Aastha Ortho & Neurotherapy Center"
+                  width={40}
+                  height={40}
+                  className="w-10 h-10 object-contain"
+                  priority
+                />
+                <span className="text-lg sm:text-xl font-bold text-primary">
+                  Aastha Ortho & Neurotherapy Center
+                </span>
+              </Link>
             </div>
 
+            {/* Desktop Nav */}
             <nav className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 <Link href="/" className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium">
                   Home
                 </Link>
-                <a
+                <Link
                   href="/about"
                   className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
                 >
                   About
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/services"
                   className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Services
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/gallery"
                   className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Gallery
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/contact"
                   className="text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Contact
-                </a>
+                </Link>
                 <a
                   href="tel:9431338221"
                   className="bg-primary text-primary-foreground px-4 py-2 rounded-lg font-medium hover:bg-green-800 transition-colors flex items-center space-x-2"
@@ -59,6 +72,7 @@ export default function Header() {
               </div>
             </nav>
 
+            {/* Mobile Menu Button */}
             <div className="md:hidden">
               <button
                 onClick={() => setIsDrawerOpen(true)}
