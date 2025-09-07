@@ -8,7 +8,7 @@ export default function Footer() {
             <p className="text-gray-300 mb-4">Expert orthopedic and neurotherapy treatments by Dr. A-HAQUE in Ranchi</p>
             <div className="text-gray-300">
               <p className="mb-2">📞 Phone: 9431338221</p>
-              <p className="mb-2">📧 Email: info@aasthaortho.com</p>
+              <p className="mb-2">📧 Email: drahaque.in@gmail.com</p>
               <p>📍 Ranchi, Jharkhand</p>
             </div>
           </div>
