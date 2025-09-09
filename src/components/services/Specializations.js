@@ -6,7 +6,7 @@ export default function Specializations() {
         "Specialized treatment for avascular necrosis, a condition where bone tissue dies due to lack of blood supply. Our advanced neurotherapy techniques help restore circulation and promote bone healing.",
       symptoms: ["Joint pain", "Limited range of motion", "Stiffness", "Difficulty walking"],
       treatments: ["Neurotherapy", "Circulation therapy", "Pain management", "Mobility restoration"],
-      image: "/specializations/avn-treatment.jpg",
+      image: "/avn-treatment2.jpg",
     },
     {
       title: "Spine Disorders",
@@ -14,7 +14,7 @@ export default function Specializations() {
         "Comprehensive treatment for various spine conditions including disc problems, sciatica, spinal stenosis, and alignment issues using non-invasive neurotherapy methods.",
       symptoms: ["Back pain", "Radiating pain", "Numbness", "Muscle weakness"],
       treatments: ["Katti Basti", "Neurotherapy", "Spinal alignment", "Pain relief therapy"],
-      image: "/specializations/spine-treatment.jpg",
+      image: "/spine-treatment.jpg",
     },
     {
       title: "Knee Joint Problems",
@@ -22,7 +22,7 @@ export default function Specializations() {
         "Expert care for knee joint conditions including arthritis, ligament injuries, cartilage damage, and mobility issues with focus on restoring function and reducing pain.",
       symptoms: ["Knee pain", "Swelling", "Stiffness", "Instability"],
       treatments: ["Joint therapy", "Mobility exercises", "Pain management", "Strengthening programs"],
-      image: "/specializations/knee-treatment.jpg",
+      image: "/knee-treatment2.jpg",
     },
   ]
 
