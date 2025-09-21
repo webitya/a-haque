@@ -1,40 +1,56 @@
+"use client";
+import React from "react";
+// ✅ All these icons exist in @mui/icons-material (no build errors)
+import PsychologyIcon from "@mui/icons-material/Psychology";        // brain / AVN
+import AccessibleIcon from "@mui/icons-material/Accessible";        // spine & knee
+import DeviceHubIcon from "@mui/icons-material/DeviceHub";          // cervical
+import SelfImprovementIcon from "@mui/icons-material/SelfImprovement"; // tailbone
+import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";  // shoulder
+import HealingIcon from "@mui/icons-material/Healing";              // joints
+
 export default function Services() {
   const services = [
     {
-      title: "Neurotherapy",
-      description: "Advanced neurotherapy treatments for nerve-related conditions",
-      icon: "🧠",
-      image: "/neurotherapy3.jpg", // Add a path to your image
+      title: "AVN Treatment",
+      description:
+        "Holistic Ayurvedic care for Avascular Necrosis, improving mobility and reducing pain naturally.",
+      icon: <PsychologyIcon fontSize="large" className="text-primary" />,
+      image: "/1.jpg",
     },
     {
-      title: "Hot & Vacuum Cupping",
-      description: "Traditional cupping therapy for pain relief and healing",
-      icon: "🔥",
-      image: "/cupping.jpg", // Add a path to your image
+      title: "Spine & Knee Joints",
+      description:
+        "Therapies designed to restore flexibility, reduce stiffness, and support healthy spine & knees.",
+      icon: <AccessibleIcon fontSize="large" className="text-primary" />,
+      image: "/2.jpg",
     },
     {
-      title: "Agni Karma",
-      description: "Ayurvedic thermal therapy for joint and muscle pain",
-      icon: "⚡",
-      image: "/agnikarma.jpg", // Add a path to your image
+      title: "Cervical",
+      description:
+        "Specialized treatment for neck stiffness, cervical spondylosis, and nerve-related issues.",
+      icon: <DeviceHubIcon fontSize="large" className="text-primary" />,
+      image: "/3.jpg",
     },
     {
-      title: "Katti Basti",
-      description: "Specialized lower back treatment with medicated oils",
-      icon: "💆",
-      image: "/kattibasti.jpg", // Add a path to your image
+      title: "Tailbone Relief",
+      description:
+        "Effective therapies to relieve tailbone pain, reduce inflammation, and restore posture balance.",
+      icon: <SelfImprovementIcon fontSize="large" className="text-primary" />,
+      image: "/4.webp",
     },
     {
-      title: "Steam & Oil Massage",
-      description: "Full body steam therapy and therapeutic oil massage",
-      icon: "💨",
-      image: "/massage.jpg", // Add a path to your image
+      title: "Shoulder Joint",
+      description:
+        "Targeted Ayurvedic therapies for frozen shoulder, stiffness, and shoulder joint mobility.",
+      icon: <FitnessCenterIcon fontSize="large" className="text-primary" />,
+      image: "/5.jpg",
     },
     {
-      title: "Joint Pain Treatment",
-      description: "Comprehensive treatment for all types of joint pain",
-      icon: "🦴",
-      image: "/joint-pain.jpg", // Add a path to your image
+      title: "All Joint Related Treatments",
+      description:
+        "Comprehensive solutions for arthritis, swelling, and all joint-related conditions.",
+      icon: <HealingIcon fontSize="large" className="text-primary" />,
+      image: "/6.webp",
     },
   ];
 
@@ -46,8 +62,8 @@ export default function Services() {
             Our Specialized Services
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive orthopedic and neurotherapy treatments tailored to your
-            needs
+            Comprehensive orthopedic and neurotherapy treatments tailored to
+            your needs
           </p>
         </div>
 
@@ -57,7 +73,7 @@ export default function Services() {
               key={index}
               className="bg-card p-6 rounded-lg border border-border hover:shadow-lg transition-shadow"
             >
-              {/* Add the image here */}
+              {/* Image */}
               <div className="w-full h-48 overflow-hidden rounded-t-lg mb-4">
                 <img
                   src={service.image}
@@ -66,12 +82,14 @@ export default function Services() {
                 />
               </div>
 
+              {/* Title & Icon */}
               <div className="flex items-center mb-4">
-                <div className="text-4xl mr-4">{service.icon}</div>
+                <div className="mr-4">{service.icon}</div>
                 <h3 className="text-xl font-semibold text-card-foreground">
                   {service.title}
                 </h3>
               </div>
+
               <p className="text-muted-foreground">{service.description}</p>
             </div>
           ))}
