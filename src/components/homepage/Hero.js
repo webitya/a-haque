@@ -28,7 +28,7 @@ export default function Hero() {
           </div>
           <div className="flex justify-center lg:justify-end">
             <img
-              src="/AasthaOrtho.png"
+              src="/6.webp"
               alt="Aastha Ortho & Neurotherapy Center Logo"
               className="w-64 h-64 md:w-80 md:h-80 object-contain"
             />
