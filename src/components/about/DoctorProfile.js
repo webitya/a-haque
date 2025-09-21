@@ -10,7 +10,7 @@ export default function DoctorProfile() {
           {/* Doctor Image */}
           <div className="flex justify-center">
             <img
-              src="/professional-doctor.png"
+              src="/dr-ahaque-photo.webp"
               alt="Dr. A-HAQUE - Orthopedic and Neurotherapy Specialist"
               className="w-full max-w-2xl h-auto rounded-2xl shadow-2xl hover:scale-105 transform transition duration-500"
             />
@@ -19,7 +19,7 @@ export default function DoctorProfile() {
           {/* Doctor Info */}
           <div className="bg-white/90 backdrop-blur-md p-10 rounded-2xl shadow-xl border border-border">
             <h1 className="text-5xl font-extrabold text-foreground mb-4">Dr. A-HAQUE</h1>
-            <h2 className="text-2xl font-semibold text-primary mb-6">Orthopedic & Neurotherapy Specialist</h2>
+            <h2 className="text-2xl font-semibold text-primary mb-6">Neurotherapy, AVN, Spine and All Joint Specialist</h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               With years of expertise, Dr. A-HAQUE specializes in treating complex conditions including
               <span className="font-medium text-foreground"> AVN (Avascular Necrosis)</span>, spine disorders, and knee joint problems using advanced neurotherapy and holistic care.
