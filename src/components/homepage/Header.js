@@ -37,13 +37,13 @@ export default function Header() {
                 />
                 <div className="flex flex-col leading-tight">
                   <span className="text-xl sm:text-2xl font-extrabold text-green-700 tracking-tight">
-                    Aastha Ortho
+                    Aastha Neurotherapy
                   </span>
                   <span className="text-base font-bold text-green-600 leading-none self-start">
-                    & Neurotherapy
+                    & All Joint Related
                   </span>
                   <span className="text-sm font-medium text-gray-700 leading-none">
-                    Center
+                    Treatment Center
                   </span>
                 </div>
               </Link>

@@ -5,7 +5,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              Expert Orthopedic & Neurotherapy Care
+              Expert Neurotherapy & Joint Treatment in Ranchi.
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl">
               Dr. A-HAQUE provides specialized treatment for AVN, spine and knee joints with advanced neurotherapy

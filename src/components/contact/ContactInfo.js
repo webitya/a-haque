@@ -21,8 +21,8 @@ export default function ContactInfo() {
     {
       title: "Email",
       description: "Send us your queries and concerns",
-      value: "info@aasthaortho.com",
-      link: "mailto:info@aasthaortho.com",
+      value: "drahaque.in@gmail.com",
+      link: "mailto:drahaque.in@gmail.com",
       icon: (
         <path
           strokeLinecap="round"

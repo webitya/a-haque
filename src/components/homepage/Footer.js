@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Aastha Ortho & Neurotherapy Center</h3>
+            <h3 className="text-xl font-bold mb-4">Aastha Neurotherapy & All Joint Related Treatment Center</h3>
             <p className="text-gray-300 mb-4">Expert orthopedic and neurotherapy treatments by Dr. A-HAQUE in Ranchi</p>
             <div className="text-gray-300">
               <p className="mb-2">📞 Phone: 9431338221</p>
@@ -38,7 +38,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
-          <p>&copy; 2025 Aastha Ortho & Neurotherapy Center. All rights reserved.</p>
+          <p>&copy; 2025 Aastha Neurotherapy & All Joint Realted Trestment Center. All rights reserved.</p>
         </div>
       </div>
     </footer>
